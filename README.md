@@ -23,8 +23,8 @@ This repository contains the source code for an ERC-20 compliant token contract 
     - You will know if you installed it right by this command `forge --version` and you get response as `forge 0.2.0 (ac80261 2024-02-24T00:17:06.154246094Z)`
 ## Quick start
 ```
-git clone https://github.com/Cyfrin/foundry-erc20-f23
-cd foundry-erc20-f23
+git clone https://github.com/nem0x001/Foundry-ERC20.git
+cd Foundry-ERC20
 forge install 
 forge build
 ```

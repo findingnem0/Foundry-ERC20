@@ -1,66 +1,46 @@
-## Foundry
+# ERC-20 Token Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains the source code for an ERC-20 compliant token contract written in Solidity. ERC-20 is a widely adopted standard for fungible tokens on the Ethereum blockchain.
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Contract Name**: ERC20Token
+- **Token Symbol**: [nem0x001]
+- **Decimals**: [18]
+- **Total Supply**: [100eth]
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- Implements the ERC-20 standard interface.
+- Allows for the transfer, approval, and transferFrom functions.
+- Provides functionalities for querying balances and allowances.
+- Emits events for all token transfers.
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## Requirments 
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+    - You will know if you installed it right by this command `git --version` and you get response as `git verion x.x.x`
+- [foundry ](https://getfoundry.sh/)   
+    - You will know if you installed it right by this command `forge --version` and you get response as `forge 0.2.0 (ac80261 2024-02-24T00:17:06.154246094Z)`
+## Quick start
+```
+git clone https://github.com/Cyfrin/foundry-erc20-f23
+cd foundry-erc20-f23
+forge install 
+forge build
 ```
 
-### Test
+## OpenZeppelin
 
-```shell
-$ forge test
+[OpenZeppelin Contracts Docs](https://docs.openzeppelin.com/contracts/4.x/)
+<br><br>
+[OpenZeppelin GitHub Repo](https://github.com/OpenZeppelin/openzeppelin-contracts)
+<br>
+
+### Installing OpenZeppelin Contracts Package
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
 ```
+# Thank you!
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+If you appreciated this, feel free to follow me on  [X](https://twitter.com/nem0x01) .
